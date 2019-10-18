@@ -26,8 +26,12 @@ oii.unitn@gmail.com oppure lotitoqf@gmail.com
 
 ### Team
 
+[Michele Baldo](https://github.com/mickbo32)
+
+[Gabriele Masina](https://github.com/masinag)
+
 [Francesco Lotito](https://github.com/FraLotito)
 
-[Giulia Carocari](https://github.com/geeooleea)
+Matteo Destro
 
-[Marta Fornasier](https://github.com/MartaFornasier)
+
