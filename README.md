@@ -32,6 +32,6 @@ oii.unitn@gmail.com oppure lotitoqf@gmail.com
 
 [Francesco Lotito](https://github.com/FraLotito)
 
-Matteo Destro
+[Matteo Destro](https://github.com/materight)
 
 
