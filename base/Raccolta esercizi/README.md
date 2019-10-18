@@ -71,6 +71,6 @@ E dopo aver risolto i primi tre esercizi (con 100/100):
 
 3. [Figonacci](https://training.olinfo.it/#/task/figonacci/statement)
 
-4. [Spartizione](https://training.olinfo.it/#/task/figonacci/statement)
+4. [Spartizione](https://training.olinfo.it/#/task/spartizione/statement)
 
 5. [Pcollatz](https://training.olinfo.it/#/task/gator_pcollatz/statement)
