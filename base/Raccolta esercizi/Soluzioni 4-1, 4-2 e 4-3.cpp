@@ -11,9 +11,11 @@ Assunzione: assumiamo che il numero N sia al massimo 1000.
 #include <iostream>
 using namespace std;
 
+int v[1000];
+
 int main(){
 
-    int v[1000];
+    // int v[1000];
     int N;
 
     cout << "Inserire N, numero di interi considerati (massimo 1000): ";
