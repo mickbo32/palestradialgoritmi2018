@@ -20,9 +20,9 @@
 
 [//]: # (fai anche la logica booleana che probabilmente non l'hanno fatta. )
 
-[//]: # (l'eserizio sul moduolo (1.3 è molto carino))
+[//]: # (l'eserizio sul moduolo [1.3 è molto carino])
 
-[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi gli facciamo risolvere i problemi con una funzione solve())
+[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi gli facciamo risolvere i problemi con una funzione "solve")
 
 [//]: # (Dividi sempre le lezioni in una mezz'oretta di teoria, un esercizio o due sulla teoria, e poi tanti esercizi pratici stile olimpiadi)
 
