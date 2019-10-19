@@ -1,5 +1,30 @@
 # Corso base di C++
 
+## Indice:
+1. [Creare un file C++](#creare-un-file-c)
+2. [Hello world (stampa a video)](#hello-world-stampa-a-video)
+3. [Le variabili](#le-variabili)
+4. [Input e output](#input-e-output)
+5. [Operazioni con le variabili](#operazioni-con-le-variabili)
+6. [Le istruzioni if e else](#le-istruzioni-if-e-else)
+7. [Gli operatori booleani booleani](#gli-operatori-booleani-booleani)
+8. [Lo switch](#lo-switch)
+9. [Input e output su file](#input-e-output-su-file)
+10. [Il ciclo while](#il-ciclo-while)
+11. [Il ciclo for](#il-ciclo-for)
+12. [Il ciclo do-while](#il-ciclo-do-while)
+
+[//]: # (13. [Funzioni])
+
+[//]: # (14. [Array])
+
+[//]: # (15. [Matrici])
+
+[//]: # (15. [Puntatori])
+
+[//]: # (15. [Struct])
+
+
 ## Creare un file C++
 Il programma che usiamo si chiama **CodeBlocks**. Se volete scaricarlo sul vostro computer ecco il link: http://www.codeblocks.org/downloads/26, scaricate la versione codeblocks-17.12mingw-setup.exe.
 
