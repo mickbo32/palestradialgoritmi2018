@@ -162,15 +162,21 @@ int main() {
 ```
 
 Come nelle equazioni il '*' ha precedenza sul '+', anche nelle operazioni booleane ci sono delle precedenze: '!' ha precedenza su '&&' e '&&' ha precedenza su '||'. Ovviamente se non ve le ricordate non c'è problema perché potete sempre usare le parentesi.
+
 Infatti nell'esempio sopra scrivere "(a >= 2 && a <= 7) || b >= 3" oppure "a >= 2 && a <= 7 || b >= 3" darà lo stesso risultato.
+
 Un altro esempio: "!(A) || (B && C)" è equivalente a scrivere "!A || B && C".
+
 ATT: Se si vuole scrivere "(A || B) && C" le parentesi sono necessarie, in quanto invece "A || B && C" equivale a "A || (B && C)".
+
 ATT: Se si vuole scrivere "!(A || B)" le parentesi sono necessarie, in quanto invece "!A || B" equivale a "!(A) || B".
 
 Inoltre può essere utile ricordare il teorema che afferma che 
+
 1. "!(a && b)" è equivalente a "!a || !b" 
 e che
 2. "!(a || b)" è equivalente a "!a && !b".
+
 Provate a dimostrarlo scrivendo le relative tabelle di verità!
 
 ## Lo switch
