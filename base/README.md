@@ -14,7 +14,7 @@ Per creare un nuovo file selezionate dal menù "File" la voce "New" e quindi "Em
 using namespace std;
 
 int main() {
-    cout << "Ciao mondo!";
+    cout << "Ciao mondo!" << endl;
     return 0;
 }
 ```
@@ -115,6 +115,61 @@ if(condizione){
 
 **Esercizio**: scrivere un programma che, inserito un numero da tastiera, stampi se è pari o dispari.
 
+### Gli operatori booleani booleani
+
+Gli operatori servono per combiare le varie condizioni logiche. In particolare abbiamo i seguenti operatori logici:
+- !	Utilizzo: !var		(NOT, se una condizione è vera la rende falsa)
+- &&	Utilizzo: var1 && var2	(AND, ritorna vero se e solo se entrambe le condizioni sono vere)
+- ||	Utilizzo: var1 || var2	(OR,  ritorna falso se e solo se entrambe le condizioni sono false)
+ 
+Qui sotto vengono riportate le tabelle i verità degli operatori booleani sopra citati (dove 0 equivale a falso e 1 equivale a vero):
+
+var  !var 
+0      1  
+1      0  
+var1  var2  |  var1 && var2  |  var1 || var2
+ 0     0    |       0        |       0      
+ 0     1    |       0        |       1      
+ 1     0    |       0        |       1      
+ 1     1    |       1        |       1       
+
+
+**Esempio:**
+```cpp
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Inserisci due interi a, b: ";
+    cin >> a >> b;
+
+    if((a >= 2 && a <= 7) || b >= 3){
+        cout << "La variabile 'a' è copresa tra 2 e 7 (estremi inclusi)"
+             << " oppure 'b' è maggiore o uguale a 3 (l'estremo 3 è incluso perché c'è"
+             << " scritto \"maggiore o uguale\")." << endl;
+    } else {
+        cout << "La variabile 'a' non è compresa tra 2 e 7 (estremi esclusi)"
+             << " e 'b' è minore di 3." << endl;
+    }
+
+    return 0;
+}
+```
+
+Come nelle equazioni il '*' ha precedenza sul '+', anche nelle operazioni booleane ci sono delle precedenze: '!' ha precedenza su '&&' e '&&' ha precedenza su '||'. Ovviamente se non ve le ricordate non c'è problema perché potete sempre usare le parentesi.
+Infatti nell'esempio sopra scrivere "(a >= 2 && a <= 7) || b >= 3" oppure "a >= 2 && a <= 7 || b >= 3" darà lo stesso risultato.
+Un altro esempio: "!(A) || (B && C)" è equivalente a scrivere "!A || B && C".
+ATT: Se si vuole scrivere "(A || B) && C" le parentesi sono necessarie, in quanto invece "A || B && C" equivale a "A || (B && C)".
+ATT: Se si vuole scrivere "!(A || B)" le parentesi sono necessarie, in quanto invece "!A || B" equivale a "!(A) || B".
+
+Inoltre può essere utile ricordare il teorema che afferma che 
+1. "!(a && b)" è equivalente a "!a || !b" 
+e che
+2. "!(a || b)" è equivalente a "!a && !b".
+Provate a dimostrarlo scrivendo le relative tabelle di verità!
+
 ## Lo switch
 ```cpp
 switch(espressione intera) { 
@@ -177,15 +232,14 @@ Il while serve per eseguire ripetutamente un insieme di istruzioni, finchè una 
 using namespace std;
 
 int main(){
-	int a = 10;
-	while(a>0){
-		cout << " a = " << a << endl;
-		a--;
-	}
+    int a = 10;
+    while(a>0){
+        cout << " a = " << a << endl;
+        a--;
+    }
     
-	return 0;
+    return 0;
 }
-
 ```
 
 
@@ -195,7 +249,7 @@ int main(){
 ```cpp
 int i;
 for(i = valore iniziale; condizione; incremento della variabile i) { 
-  istruzioni; 
+    istruzioni; 
 } 
 ```
 I cicli for seguono un meccanismo simile al while, vengono solitamente usati quando si conosce il numero di iterazioni da fare (mentre il while solitamente quando questo numero non è conosciuto).
@@ -209,12 +263,41 @@ Il for fa uso di una variabile, in questo caso la variabile i, come contatore de
 using namespace std;
 
 int main(){
-	int i;
-	for(i = 0; i<10; i++){
-		cout << " i = " << i << endl;
-	}
+    int a;
+    do {
+        cout << " " << i << endl;
+    } while();
     
-	return 0;
+    return 0;
 }
-
 ```
+
+
+## Il ciclo do-while
+```cpp
+do {
+    istruzioni;
+} while (condizione);
+```
+Il ciclo do-while si utilizza quando si vuole che la condizione sia controllata alla fine del ciclo e non all'inizio. Se la condizione è soddisfatta, il ciclo viene ripetuto.
+
+Solitamente i cicli più utilizzati sono il ciclo for e il ciclo while e con questi due cicli si può fare tutto, tanto che alcuni linguaggi di programmazione implementano solo questi due tipi di cicli. Però in alcune situazioni può tornare utile anche il ciclo do-while, ad esempio quando si prendono dati in input e si vuole controllare la loro correttezza prima di continuare.
+
+**Esempio:**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a;
+    do {
+        cout << "Inserire un numero pari maggiore di zero: ";
+	cin >> a;
+    } while (!(a > 0 && a % 2 == 0));
+
+    return 0;
+}
+```
+In questo esempio verrà chiesto all'utente di inserire un numero finché tale numero non sarà pari e maggiore di zero.
+
