@@ -129,7 +129,7 @@ Qui sotto vengono riportate le tabelle i verità degli operatori booleani sopra 
 | 0   |   1  | 
 | 1   |   0  | 
 
-| var1 | var2 | `var1 && var2` | `var1 \|\| var2` |
+| var1 | var2 | `var1 && var2` | <code>var1 &#124;&#124; var2</code> |
 |:----:|:----:|:------------:|:--------------:|
 |  0   |  0   |      0       |       0        |
 |  0   |  1   |      0       |       1        |
