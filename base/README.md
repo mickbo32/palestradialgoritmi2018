@@ -123,16 +123,19 @@ Gli operatori servono per combiare le varie condizioni logiche. In particolare a
 - ||	Utilizzo: var1 || var2	(OR,  ritorna falso se e solo se entrambe le condizioni sono false)
  
 Qui sotto vengono riportate le tabelle i verità degli operatori booleani sopra citati (dove 0 equivale a falso e 1 equivale a vero):
-```
-var  !var 
-0      1  
-1      0  
-var1  var2  |  var1 && var2  |  var1 || var2
- 0     0    |       0        |       0      
- 0     1    |       0        |       1      
- 1     0    |       0        |       1      
- 1     1    |       1        |       1       
-```
+
+| var | `!var` |
+|:---:|:----:|
+| 0   |   1  | 
+| 1   |   0  | 
+
+| var1 | var2 | `var1 && var2` | `var1 || var2` |
+|:----:|:----:|:------------:|:--------------:|
+|  0   |  0   |      0       |       0        |
+|  0   |  1   |      0       |       1        |
+|  1   |  0   |      0       |       1        |
+|  1   |  1   |      1       |       1        |
+
 
 **Esempio:**
 ```cpp
