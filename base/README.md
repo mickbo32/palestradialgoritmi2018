@@ -16,7 +16,7 @@
 
 [//]: # (13. [Funzioni])
 
-[//]: # (fai prima questo e fagli fare i problemi easy123 con e senza array -> 14. [Array])
+[//]: # (fai prima questo e fagli fare i problemi easy123 con e senza array, fagli fare ad ognuno la versione diversa da quella he hanno già fatto; poi fagli vedere le soluzioni. Inizialmente dagli in link di questa guida qui e assicurati che tutti la abbiano visualizzata sul pc prima di procedere. -> 14. [Array])
 
 [//]: # (fai anche la logica booleana che probabilmente non l'hanno fatta. )
 
