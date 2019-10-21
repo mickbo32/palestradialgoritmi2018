@@ -16,13 +16,13 @@
 
 [//]: # (13. [Funzioni])
 
-[//]: # (fai prima questo e fagli fare i problemi easy123 con e senza array -> 14. [Array])
+[//]: # (fai prima questo e fagli fare i problemi easy123 con e senza array, fagli fare ad ognuno la versione diversa da quella he hanno già fatto; poi fagli vedere le soluzioni. Inizialmente dagli in link di questa guida qui e assicurati che tutti la abbiano visualizzata sul pc prima di procedere. -> 14. [Array])
 
 [//]: # (fai anche la logica booleana che probabilmente non l'hanno fatta. )
 
-[//]: # (l'eserizio sul moduolo (1.3 è molto carino))
+[//]: # (l'eserizio sul moduolo [1.3 è molto carino])
 
-[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi gli facciamo risolvere i problemi con una funzione solve())
+[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi gli facciamo risolvere i problemi con una funzione "solve")
 
 [//]: # (Dividi sempre le lezioni in una mezz'oretta di teoria, un esercizio o due sulla teoria, e poi tanti esercizi pratici stile olimpiadi)
 
