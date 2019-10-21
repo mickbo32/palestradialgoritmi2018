@@ -13,10 +13,9 @@
 10. [Il ciclo while](#il-ciclo-while)
 11. [Il ciclo for](#il-ciclo-for)
 12. [Il ciclo do-while](#il-ciclo-do-while)
-
-[//]: # (13. [Funzioni])
-
-[//]: # (fai prima questo e fagli fare i problemi easy123 con e senza array, fagli fare ad ognuno la versione diversa da quella he hanno già fatto; poi fagli vedere le soluzioni. Inizialmente dagli in link di questa guida qui e assicurati che tutti la abbiano visualizzata sul pc prima di procedere. -> 14. [Array])
+13. [Array](#array)
+14. [Matrici](#matrici)
+15. [Funzioni](#funzioni)
 
 [//]: # (fai anche la logica booleana che probabilmente non l'hanno fatta. )
 
@@ -342,4 +341,132 @@ int main(){
 }
 ```
 In questo esempio verrà chiesto all'utente di inserire un numero finché tale numero non sarà pari e maggiore di zero.
+
+
+## Array
+
+**Esempio:**
+```cpp
+#include<iostream>
+using namespace std;
+
+const int N_MAX = 10000000;
+int v[N_MAX];  // ambiente globale -> inizializzato a zero
+
+int main(){
+    int n;
+
+    cout << "Inserire N (minore o uguale a "<<N_MAX<<"): ";
+    cin >> n;
+    // ATT:
+    // ERRORE: int vv[n]; (i c-array devono avere dimensione dichiarata a compile-time)
+    // OK: int vv[5];  // però se si dichiara l'array nel main ( o in una funzione) i valori non vengono inizializzati
+
+    cout << "Inserire "<<n<<" interi:" << endl;
+    for (int i = 0; i < n; i++) {
+        int tmp;
+        cin >> tmp;
+        v[i] = tmp;
+        // --- Questo equivale a: ---
+        // cin >> v[i];
+    }
+
+    cout << "Gli interi inseriti sono:" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+```
+
+
+# Matrici
+
+**Esempio:**
+```cpp
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+
+
+    return 0;
+}
+```
+
+
+
+## Funzioni:
+
+**Esempio 1:**
+```cpp
+#include<iostream>
+using namespace std;
+
+double max(double a, double b) {
+    double res;
+    if (a > b) {
+        res = a;
+    } else {
+        res = b;
+    }
+    return res;
+}
+
+int main(){
+    double a, b;
+    cout << "Inserire due numeri reali: " << endl;
+    cin >> a >> b;
+    cout << "Il maggiore tra "<<a<<" e "<<b<<" è: " << max(a, b) << endl;
+    return 0;
+}
+```
+
+**Esempio 2:**
+```cpp
+#include<iostream>
+using namespace std;
+
+double max(double a, double b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+int main(){
+    double a, b;
+    cout << "Inserire due numeri reali: " << endl;
+    cin >> a >> b;
+    cout << "Il maggiore tra "<<a<<" e "<<b<<" è: " << max(a, b) << endl;
+    return 0;
+}
+```
+
+**Esempio 3:**
+```cpp
+#include<iostream>
+using namespace std;
+
+int sommaElementiArray(int array[], int n) {
+    int somma = 0;
+    for (int i=0; i<n; i++) {
+        somma += array[i];
+    }
+    return somma;
+}
+
+int main(){
+    int n = 5;
+    int v[] = {1, 2, 3, 4, 5};
+    int sum = sommaElementiArray(v, n);
+    cout << "La somma degli elementi in 'v' è: " << sum << endl;
+    return 0;
+}
+```
 
