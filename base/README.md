@@ -344,6 +344,13 @@ In questo esempio verrà chiesto all'utente di inserire un numero finché tale n
 
 
 ## Array
+Un array rappresenta una sequenza di dati dello stesso tipo, nella quale gli elementi si distinguono uno dall’altro attraverso un indice che indica la loro posizione, dove il primo elemento ha indice 0. Per accedere all'`i`-esimo elemento dell'array `v` scriviamo `v[i]`.
+
+Gli array hanno dimensione statica, nota a tempo di compilazione, e perciò non può dipendere da una variabile il cui valore sarà noto solo durante l'esecuzione del programma.
+
+Per aggirare il problema, dichiariamo un array con dimensione massima molto grande (la più grande specificata dal problema) e teniamo in una variabile la dimensione effettiva `n`, che sarà minore o uguale a quella massima. 
+
+Quindi utilizziamo solamente il sotto-array fino alla posizione `n`. 
 
 **Esempio:**
 ```cpp
@@ -383,16 +390,41 @@ int main(){
 
 
 # Matrici
+Una matrice è un array di array, detto anche array bidimensionale. Può essere immaginata come una tabella formata da righe e colonne, dove possiamo accedere alla cella della matrice `m` che si trova alla `i`-esima riga nella `j`-esima colonna con l'istruzione `m[i][j]`. Gli indici di riga e colonna partono da 0.
+
+Come per gli array monodimensionali, la dimensione deve essere nota a tempo di compilazione.
 
 **Esempio:**
 ```cpp
 #include<iostream>
 using namespace std;
 
+const int N_MAX = 1000;
+const int M_MAX = 500;
 
 int main(){
-    int n;
 
+    int n, m;
+    // valgono le stesse regole della dichiarazione di array monodimensionali
+    int matrice[N_MAX][M_MAX];
+
+    cout << "Inserire N ( <= "<< N_MAX <<" ) e M ( <= " << M_MAX << " ): ";
+    cin >> n >> m;
+    
+    // in ogni cella scrivo il suo 'numero'
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++){
+            matrice[i][j] = i * m + j ;
+        }
+    }
+
+    // stampo la matrice
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++){
+            cout << matrice[i][j] << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
@@ -401,6 +433,18 @@ int main(){
 
 
 ## Funzioni:
+Una funzione è un sotto-programma che può essere utilizzato ripetutamente in un programma.
+
+In un programma è sempre opportuno e conveniente strutturare il codice raggruppandone delle sue parti in sotto-programmi autonomi, che vengono eseguiti in ogni punto in cui è richiesto.
+
+L’organizzazione in funzioni ha moltissimi vantaggi, tra cui:
+* Miglior strutturazione e organizzazione del codice
+* Maggior leggibilità del codice
+* Maggior mantenibilità del codice
+* Riutilizzo di sotto-parti di uno stesso programma più volte
+* Utilizzo di codice fatto da altri/librerie
+
+In C++ è possibile definire e chiamare funzioni come nei seguenti esempi.
 
 **Esempio 1:**
 ```cpp
