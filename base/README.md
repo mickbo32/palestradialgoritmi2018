@@ -462,10 +462,10 @@ double max(double a, double b) {
 }
 
 int main(){
-    double a, b;
+    double x, y;
     cout << "Inserire due numeri reali: " << endl;
-    cin >> a >> b;
-    cout << "Il maggiore tra "<<a<<" e "<<b<<" è: " << max(a, b) << endl;
+    cin >> x >> y;
+    cout << "Il maggiore tra " << x << " e " << y << " è: " << max(x, y) << endl;
     return 0;
 }
 ```
@@ -484,10 +484,10 @@ double max(double a, double b) {
 }
 
 int main(){
-    double a, b;
+    double x, y;
     cout << "Inserire due numeri reali: " << endl;
-    cin >> a >> b;
-    cout << "Il maggiore tra "<<a<<" e "<<b<<" è: " << max(a, b) << endl;
+    cin >> x >> y;
+    cout << "Il maggiore tra " << x << " e " << y << " è: " << max(x, y) << endl;
     return 0;
 }
 ```
