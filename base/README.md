@@ -507,9 +507,13 @@ int sommaElementiArray(int array[], int n) {
 
 int main(){
     int n = 5;
-    int v[] = {1, 2, 3, 4, 5};
-    int sum = sommaElementiArray(v, n);
-    cout << "La somma degli elementi in 'v' è: " << sum << endl;
+    int v1[] = {1, 2, 3, 4, 5};
+    int v2[] = {6, 7, 8, 9, 5};
+    
+    int sum1 = sommaElementiArray(v1, n);
+    int sum2 = sommaElementiArray(v2, n);
+    cout << "La somma degli elementi in 'v1' è: " << sum1 << endl;
+    cout << "La somma degli elementi in 'v2' è: " << sum2 << endl;
     return 0;
 }
 ```
