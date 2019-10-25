@@ -359,6 +359,8 @@ using namespace std;
 
 const int N_MAX = 10000000;
 int v[N_MAX];  // ambiente globale -> inizializzato a zero
+// oppure:
+// int v[10000000];
 
 int main(){
     int n;
