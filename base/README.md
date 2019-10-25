@@ -17,15 +17,11 @@
 14. [Matrici](#matrici)
 15. [Funzioni](#funzioni)
 
-[//]: # (fai anche la logica booleana che probabilmente non l'hanno fatta. )
-
 [//]: # (l'eserizio sul moduolo [1.3 è molto carino])
 
-[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi gli facciamo risolvere i problemi con una funzione "solve")
+[//]: # (Le funzioni le facciamo la prossima lezione. faremmo funzioni semplici: implementiamo la max, int void ecc... e poi facciamo risolvere alcuni problemi già risolti in precedenza con una funzione "solve")
 
 [//]: # (Dividi sempre le lezioni in una mezz'oretta di teoria, un esercizio o due sulla teoria, e poi tanti esercizi pratici stile olimpiadi)
-
-[//]: # (15. [Matrici])
 
 [//]: # (15. [Puntatori])
 
@@ -520,3 +516,32 @@ int main(){
 }
 ```
 
+**Esempio 4:**
+```cpp
+#include<iostream>
+using namespace std;
+
+// void significa che la procedura non ritorna un risultato
+void stampaElementiArray(int array[], int n);
+// se voglio solo dichiarare una funzione, senza però definire subito come svolgere il suo lavoro, 
+// posso fare come qui sopra e definire il corpo della funzione successivamente.
+
+int main(){
+    int n = 5;
+    int v1[] = {1, 2, 3, 4, 5};
+    int v2[] = {6, 7, 8, 9, 5};
+    
+    cout << "Stampa a scermo gli elementi in 'v1': " << endl;
+    stampaElementiArray(v1, n);
+    cout << "Stampa a scermo gli elementi in 'v2': " << endl;
+    stampaElementiArray(v2, n);
+    return 0;
+}
+
+void stampaElementiArray(int array[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+}
+```
