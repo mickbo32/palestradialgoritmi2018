@@ -154,9 +154,11 @@ scelta potrebbe portarmi in una situazione migliore
 successivi, reiterando il procedimento dal punto 1, fino a quando non verrà selezionato un turno
 che finisce l’ultimo giorno.
 
-In questo modo si è arrivati alla conclusione che il problema è di tipo greedy, e quindi conviene ordinare
-i turni di guardia usando come parametro per l’ordinamento il giorno di inizio, in modo da
-poter implementare in maniera efficiente l’algoritmo appena descritto.
+In questo modo si è arrivati alla conclusione che il problema è di tipo greedy.
+
+Presentiamo 2 soluzioni, entrambe da 100/100:
+1) Per trovare il prossimo turno da selezionare con data di fine massima, semplicemente analizzo tutti i turni con un for.
+2) L'algoritmo può essere ottimizzato ordinando i turni per giorno di inizio, in modo da poter "saltare" i turni già coperti durante la ricerca del prossimo turno. L'ordianento può essere fatto con il metodo **sort** (nella libreria \<algorithm\>).
 
 __NOTA:__ grazie al prof. Bugatti per questa spiegazione, ho usato la sua perché è chiarissima e non avrei saputo far di meglio
 
