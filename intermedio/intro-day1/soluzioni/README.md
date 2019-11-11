@@ -158,7 +158,7 @@ In questo modo si è arrivati alla conclusione che il problema è di tipo greedy
 
 Presentiamo 2 soluzioni, entrambe da 100/100:
 1) Per trovare il prossimo turno da selezionare con data di fine massima, semplicemente analizzo tutti i turni con un for.
-2) L'algoritmo può essere ottimizzato ordinando i turni per giorno di inizio, in modo da poter "saltare" i turni già coperti durante la ricerca del prossimo turno. L'ordianento può essere fatto con il metodo **sort** (nella libreria \<algorithm\>).
+2) L'algoritmo può essere ottimizzato ordinando i turni per giorno d'inizio, in modo da poter "saltare" i turni già coperti durante la ricerca del prossimo turno. L'ordinamento può essere fatto con il metodo **sort** (nella libreria \<algorithm\>).
 
 __NOTA:__ grazie al prof. Bugatti per questa spiegazione, ho usato la sua perché è chiarissima e non avrei saputo far di meglio
 
