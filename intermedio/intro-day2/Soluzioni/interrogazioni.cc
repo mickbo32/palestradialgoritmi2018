@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 #include <algorithm>
 
 #define MAXN 10000
@@ -7,9 +7,9 @@
 using namespace std;
 
 int interroga(int N, int K, int D[]) {
-    sort(D, D+N);
-    int m = D[N-1] - D[0];
-    for(int i=0;i<=N-K;i++) m = min(m , D[i+K-1] - D[i]);
+    sort(D, D + N);
+    int m = D[N - 1] - D[0];
+    for (int i = 0; i <= N - K; i++) m = min(m, D[i + K - 1] - D[i]);
     return m;
 }
 

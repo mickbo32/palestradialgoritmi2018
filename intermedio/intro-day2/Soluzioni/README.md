@@ -76,3 +76,14 @@ Simuliamo i vari sorpassi, uno dopo l'altro, invertendo nella classifica (nel ve
 
 ### Idee alternative
 A me non ne viene in mente nessuna, ma se voi ne avete trovate altre siamo ben lieti di sentirle :wink:
+
+
+* ## Cubetti
+### Breve spiegazione del testo
+Dato in input un array di interi, che rappresentano i colori asseganti ad ogni cubetto, determinare quali valori modificare in modo che siano tutti distinti.
+
+### Idee generali per risolvere l'esercizio
+Dato che nelle assunzioni viene specificato che ```1 <= colore[i] <= N```, possiamo memorizzare in un array di bool i colori già usati e inserire in una coda quelli liberi. Fatto ciò, vernicio ogni cubetto che utilizza un colore già usato con un colore estratto dalla coda.
+
+### Idee alternative
+La soluzione presentata utilizza la struttura dati ```bitset``` al posto di un array.
